@@ -1,0 +1,66 @@
+body {
+  display: block;
+  text-align:center;
+  background-color: #000000;
+  background-image: url('https://i.gifer.com/OO1B.gif'), url("background.png");
+}
+
+h1 {
+  width: 1000px;
+  margin: auto;
+  font: normal 50px Segoe Print, sans-serif;
+  letter-spacing: 12px;
+  padding-bottom: 15px;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.first {
+    background-color: black;
+    color: #fbfcfe;
+    height: 80px;
+    border: solid #fbfcfe 8px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.second {
+    width: 607px;
+    font: normal 36px Segoe Print, sans-serif;
+    transition: 0.5s;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+.second:hover {
+  background-color: #fbfcfe;
+  color: black;
+  border-color: #fbfcfe;
+  transform: scale(1.15);
+}
+
+#menuR{
+  display: none;
+  style: none;
+}
+
+#newButton {
+  position: absolute;
+  top: 615px;
+  left: 440px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
